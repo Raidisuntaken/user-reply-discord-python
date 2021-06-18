@@ -1,2 +1,12 @@
 # user-reply-discord-python
-Discord.py user reply code and author name reply messages
+
+
+#example 1
+@client.command()
+async def yourcommand(ctx):
+ await ctx.send('➤ your messages')
+
+#example 2
+@client.command()
+async def hello(ctx):
+ await ctx.send (f"➤ HELLO, {ctx.author.name}")
